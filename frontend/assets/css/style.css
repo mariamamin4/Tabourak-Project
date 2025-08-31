@@ -1,0 +1,605 @@
+/* ===============================
+   Global Styles
+================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --accent: #a8cbed; /* اللون الأساسي */
+  --dark:#113254;
+  --muted: #dbe7f5;
+  --light-bg: #e8f1fa;
+  --formslable:#ebf1f7;
+  --blue:#356697 ;
+  --babyblu:#5692D3;
+}
+
+body {
+ font-family: "Roboto", sans-serif;
+  background-color: white;
+  color: var(--dark);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===============================
+   Navbar
+================================= */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.09);
+  background-color:white;
+ 
+}
+.navbar .container{
+    display: flex;
+  justify-content: space-between; 
+  align-items: center;
+
+}
+.navbar-nav {
+ 
+  gap: 40px; 
+  align-items: center;
+  font-size: 18px;
+   transition: 0.6s ease-in-out;
+  }
+  .navbar-brand{
+    margin-right: 20px;
+  }
+
+.navbar-brand img , .foot-img{
+  height: 70px;
+  border-radius: 50%;
+  width: 70px;
+ 
+}
+
+.navbar-light .nav-link {
+  color: var(--dark) !important; 
+  font-weight: 700;
+ 
+}
+
+.navbar-light .nav-link:hover {
+  color: var(--blue) !important; 
+   transform: scale(1.08);
+}
+.singup-login .btn {
+  margin-left: 10px;
+}
+
+.navbar-light .navbar-toggler {
+  border: none; 
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280,0,0,0.85%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+/* ===============================
+   Buttons
+================================= */
+.btn-success {
+  background-color: var(--accent) !important;
+   border-radius: 10px;
+ transition: transform 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: var(--dark)!important;
+    transform: scale(1.1)!important; 
+}
+.btn-sign{
+    color: white !important;
+  border-color: var(--muted) !important;
+  background-color: var(--dark);
+   border-radius: 10px;
+    transition: transform 0.3s ease;
+
+}
+.btn-sign:hover{
+     color: var(--white) !important;
+  border-color: var(--accent) !important;
+  background-color: var(--blue);
+  transform: scale(1.03)!important; 
+}
+
+.btn-outline {
+  color: var(--dark) !important;
+  border-color: var(--accent) !important;
+   border-radius: 10px;
+    transition: transform 0.3s ease;
+
+}
+
+.btn-outline:hover {
+  background-color: var(--dark) !important;
+  color: white !important;
+  transform: scale(1.03)!important; 
+
+}
+.btn-outline-light{
+
+    background-color: var(--accent) !important;
+    border: 1px solid #5692D3 !important;
+    color: #5692D3 ;
+     border-radius: 10px;
+
+
+}
+.btn-learnmore{
+  color:var(--blue);
+  border:1px solid var(--blue);
+    background-color: var(--muted);
+    border-radius: 10px;
+     transition: transform 0.3s ease;
+
+}
+.btn-learnmore:hover{
+  color:var(--white);
+  border:1px solid var(--blue);
+  background-color: var(--babyblu);
+  transform: scale(1.1)!important; 
+
+}
+.booking-btn{
+  background-color: #2776c4 !important;
+  color: white;
+  border-radius: 10px;
+   padding: 6px 14px;
+    transition: transform 0.3s ease;
+
+}
+.booking-btn:hover{
+  background-color: var(--babyblu)!important;
+  color: var(--dark);
+   transform: scale(1.1)!important; 
+
+}
+.singup-login{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+   gap:20px;
+    border-radius: 10px;
+}
+.cta-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 18px;
+  border-radius: 30px;
+  background: #007bff;
+  color: #fff;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.cta-btn:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+
+
+/* ===============================
+   Cards & Sections
+================================= */
+.card, .booking-card, .ticket-card, .admin-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+.feature-card {
+  transition: transform 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+}
+
+/* ===============================
+   Hero Section
+================================= */
+.hero {
+  background: linear-gradient(180deg, rgb(17, 50, 84) 0%, rgba(17, 50, 84, 0.85) 50%, rgba(230, 239, 250, 1) 100%);
+  position: relative;
+  overflow: hidden;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+.hero .hero-img {
+  border-radius: 20px;        
+  max-height: 420px;          
+  width: auto;                
+  display: block;             
+  object-fit: cover;          
+  object-position: right center; 
+  opacity: 0.8;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  transition: transform .35s ease, box-shadow .35s ease, opacity .25s;
+}
+
+.hero .hero-img:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 40px 60px rgba(0,0,0,0.2);
+  opacity: 1;
+}
+
+
+@media (max-width: 1200px) {
+  .hero .hero-img { max-height: 360px; }
+}
+@media (max-width: 992px) {
+  .hero .hero-img { max-height: 260px; width: 60%; }
+}
+
+.hero h1 {
+  font-weight: 800;
+  color: var(--white);
+}
+
+.hero p {
+  color: var(--dark);
+  font-size: 1.1rem;
+}
+
+/* Details Cards */
+.details-card {
+  background: var(--formslable);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 30px rgba(10, 18, 20, 0.04);
+  height: 28vh;
+  text-align: center;
+  display: grid;
+}
+
+.details-card .card-number {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+
+
+/* ===============================
+   Stats Section
+================================= */
+.stat {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: var(--muted);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(15,20,25,0.06);
+    }
+
+.stat h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--dark);
+}
+.stat p {
+  font-size: 0.9rem;
+}
+
+#stats {
+  margin-bottom: 2rem; 
+}
+
+#features {
+  padding-top: 2.5rem; 
+}
+
+@media (max-width: 768px) {
+  #stats .row {
+    row-gap: 2rem; 
+  }
+
+  #features .row {
+    row-gap: 2rem;
+  }
+
+  #details .row{
+    row-gap: 2rem;;
+  }
+}
+@media (max-width: 576px) {
+  #details .details-card {
+    margin-bottom: 1.5rem; 
+  }
+}
+
+/* ===============================
+   Reviews
+================================= */
+.reviews {
+  background: white;
+  padding: 1rem 1.5rem; 
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06); 
+}
+
+.reviews strong {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.reviews p {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.reviews img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid var(--dark); 
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: var(--dark); 
+  background-size: 60% 60%; 
+  border-radius: 50%; 
+  padding: 10px; 
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px; 
+   background: none; 
+  border: none;
+}
+
+
+/* ===============================
+      Parteners section
+================================= */
+.partners-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px; 
+}
+
+.partners-logos img {
+  height: 50px; 
+  width: auto; 
+  opacity: 0.9;
+  object-fit: contain; 
+  transition: transform 0.2s ease;
+  border-radius: 50%;
+}
+
+.partners-logos img:hover {
+  transform: scale(1.1); 
+}
+
+
+/* ===============================
+   Featuress
+================================= */
+
+.feature-card {
+  background: var(--muted);
+  border-radius: 10px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.1ms ease, box-shadow 0.3s ease;
+}
+.feature-card:hover {
+  transform: translateY(-15px) !important;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+.feature-link {
+  color: inherit;       
+  display: block;       
+}
+.feature-link, 
+.feature-link:hover,
+.feature-link:focus,
+.feature-link:active {
+  text-decoration: none !important;
+  color: inherit; 
+}
+
+
+
+/* ===============================
+   CTA
+================================= */
+.cta{
+   background: linear-gradient(180deg, rgb(17, 50, 84) 0%,rgba(17, 50, 84, 0.736) 35%, rgba(17, 50, 84, 0.532) 100%);
+ border-radius:12px;
+  color:#fff;
+}
+
+
+/* ===============================
+   Footer
+================================= */
+footer {
+  background: #f0f3f4;
+  padding: 2rem 0;
+}
+
+footer h6 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+footer a , footer li{
+  text-decoration: none;
+  color: var(--dark);
+}
+
+footer a:hover , footer li:hover{
+  color:var(--accent);
+}
+
+/* ===============================
+   Booking Form
+================================= */
+    .booking-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      max-width: 600px;
+      margin: auto;
+    }
+    #bookingForm .booking-input{
+      background-color: var(--formslable) !important;
+    }
+
+/* ===============================
+   Ticket Page
+================================= */
+  .ticket-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      max-width: 500px;
+      margin: auto;
+      text-align: center;
+    }
+    .ticket-number {
+      font-size: 3rem;
+      font-weight: bold;
+      color:var(--dark);
+    }
+    .status-badge {
+      display: inline-block;
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      background:var(--accent);
+      color: var(--dark);
+      font-weight: 500;
+    }
+
+/* ===============================
+   Admin Table
+================================= */
+   .admin-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.table th, .table td {
+  vertical-align: middle;
+}
+
+.table td button {
+  min-width: 70px;
+}
+
+/* =============================
+      login page
+================================*/
+    .login-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      max-width: 400px;
+      margin: auto;
+      margin-top: 5%;
+    }
+    .login-form{
+       background-color: var(--formslable);
+    }
+
+  .signup-link {
+  color: var(--dark);
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+  color: var(--primary);
+}
+
+#loginMessage {
+  font-size: 0.9rem;
+}
+
+/* =============================
+      signup page
+================================*/
+.signup-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+      max-width: 400px;
+      margin: auto;
+      margin-top: 5%;
+    }
+    .signup-form{
+       background-color: var(--formslable);
+    }
+
+  /*========================
+      contact page
+  ===========================*/
+
+   .contact-container {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      margin-top: 2rem;
+    }
+
+    h2 {
+      color: var(--dark);
+      font-weight: bold;
+    }
+
+   #contactForm .form-label {
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+   #contactForm .form-control{
+      background: var(--formslable); 
+
+    }
+
+    .btn-submit {
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    .contact-info p {
+      margin: 0;
+      color: var(--dark);
+    }
+    .contact-info i {
+      color: var(--accent);
+      margin-right: 8px;
+    }
+
+/* ===============================
+   Responsive tweaks
+================================= */
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 0;
+  }
+}

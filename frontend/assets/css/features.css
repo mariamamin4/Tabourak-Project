@@ -1,0 +1,173 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --accent: #a8cbed; /* اللون الأساسي */
+  --dark:#113254;
+  --muted: #dbe7f5;
+  --light-bg: #e8f1fa;
+  --formslable:#ebf1f7;
+  --blue:#356697 ;
+  --babyblu:#5692D3;
+}
+
+body {
+ font-family: "Roboto", sans-serif;
+  background-color: white;
+  color: var(--dark);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+/* ===============================
+   Navbar
+================================= */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.09);
+  background-color:white;
+ 
+}
+.navbar .container{
+    display: flex;
+  justify-content: space-between; 
+  align-items: center;
+
+}
+.navbar-nav {
+ 
+  gap: 40px; 
+  align-items: center;
+  font-size: 18px;
+   transition: 0.6s ease-in-out;
+  }
+  .navbar-brand{
+    margin-right: 20px;
+  }
+
+.navbar-brand img , .foot-img{
+  height: 70px;
+  border-radius: 50%;
+  width: 70px;
+ 
+}
+
+.navbar-light .nav-link {
+  color: var(--dark) !important; 
+  font-weight: 700;
+ 
+}
+
+.navbar-light .nav-link:hover {
+  color: var(--babyblu) !important; 
+   transform: scale(1.08);
+}
+
+.navbar-light .navbar-toggler {
+  border: none; 
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280,0,0,0.85%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/*===============================
+  online ticketing
+=================================*/
+.page-hero {
+      min-height: 70vh;
+      background: linear-gradient(180deg, rgb(17, 50, 84) 0%, rgba(17, 50, 84, 0.85) 50%, rgba(230, 239, 250, 1) 100%);
+      color: #fff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 50px 20px;
+      border-radius: 16px;
+      margin-bottom: 60px;
+    }
+    .page-hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .page-hero p {
+      font-size: 1.2rem;
+      margin: 15px 0;
+    }
+.booking-btn{
+  background-color: var(--babyblu) !important;
+  color: white;
+  border-radius: 10px;
+   padding: 6px 14px;
+  transition: transform 0.3s ease;
+
+}
+.booking-btn:hover{
+  background-color: var(--accent)!important;
+  color: var(--dark);
+  transform: scale(1.1)!important; }
+
+    /* Steps Section */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-bottom: 80px;
+    }
+    .feature-card {
+      background:var(--muted);
+      border-radius: 10px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .feature-card:hover {
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      color: var(--babyblu);  
+      transform: scale(1.07)!important; 
+    }
+    .feature-card i {
+        font-size: 50px;      
+         color: var(--dark);   
+         margin-bottom: 15px;
+         transition: 0.3s ease;
+    }
+    .feature-card i:hover {
+      color: var(--babyblu);  
+      transform: scale(1.02);
+}
+    .feature-card h3 {
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+/* Dashboard */
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-bottom: 60px;
+}
+.dashboard-card {
+ background:var(--muted);
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.dashboard-card h4{
+  font-weight: 700;
+}
+.dashboard-card i {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  color: var(--primary, #007bff);
+}
+.dashboard-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+

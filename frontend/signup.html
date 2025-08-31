@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sign Up — Tabourak</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo.png" alt="Logo">
+      </a>
+    </div>
+  </nav>
+
+  <!-- SIGN UP FORM -->
+  <div class="container my-5">
+    <div class="signup-card">
+      <h3 class="mb-4 text-center">Sign Up</h3>
+      <form id="signupForm">
+        <div class="mb-3">
+          <label class="form-label">Username</label>
+          <input type="text" id="username" class="form-control signup-form" required placeholder="Choose a username">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Password</label>
+          <input type="password" id="password" class="form-control signup-form" required placeholder="Choose a password">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Role</label>
+          <select id="role" class="form-select" required>
+            <option value="">Select role</option>
+            <option value="user">User</option>
+            <option value="admin">Admin</option>
+          </select>
+        </div>
+        <button type="submit" class="btn booking-btn w-100">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/signup.js"></script>
+</body>
+</html>
