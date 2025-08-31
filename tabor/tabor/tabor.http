@@ -1,0 +1,6 @@
+@tabor_HostAddress = http://localhost:5080
+
+GET {{tabor_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
