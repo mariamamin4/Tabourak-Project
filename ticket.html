@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Ticket — Queuely</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+  <!-- Main custom styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo.png" alt="Logo" >
+      </a>
+    </div>
+  </nav>
+
+  <!-- TICKET DISPLAY -->
+  <div class="container my-5">
+    <div class="ticket-card">
+      <h3 class="mb-3">Your Ticket</h3>
+      <div id="ticketNumber" class="ticket-number">####</div>
+      <div id="status" class="status-badge">Waiting</div>
+
+      <div class="mt-4 text-start">
+        <p><strong>Name:</strong> <span id="ticketName"></span></p>
+        <p><strong>Branch:</strong> <span id="ticketBranch"></span></p>
+        <p><strong>Service:</strong> <span id="ticketService"></span></p>
+        <p><strong>Date:</strong> <span id="ticketDate"></span></p>
+        <p><strong>Time:</strong> <span id="ticketTime"></span></p>
+        <p><strong>Estimated Wait:</strong> <span id="ticketWait"></span></p>
+      </div>
+
+      <button id="cancelBtn" class="btn btn-danger w-100 mt-4">Cancel Booking</button>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Ticket JS -->
+  <script src="assets/js/ticket.js"></script>
+</body>
+</html>

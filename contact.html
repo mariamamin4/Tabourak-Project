@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Queuely</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="assets/lib/fontawesome/css/all.min.css">
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+
+   
+  </style>
+</head>
+<body>
+
+  <div class="container contact-container">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Fill out the form below or reach us via the provided contact details.</p>
+    <hr>
+
+    <div class="row">
+      <!-- Contact Info -->
+      <div class="col-md-5 contact-info">
+        <p><i class="fas fa-envelope"></i> support@queuely.example</p>
+        <p><i class="fas fa-phone"></i> +20 100 000 0000</p>
+        <p><i class="fas fa-map-marker-alt"></i> Mansoura, Egypt</p>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-md-7">
+        <form id="contactForm">
+          <div class="mb-3">
+            <label class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit booking-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  
+  <!--JS for form -->
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thank you for your message! We will get back to you soon.");
+      this.reset();
+    });
+  </script>
+</body>
+</html>
