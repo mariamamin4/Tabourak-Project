@@ -1,0 +1,6 @@
+@QueueManagerApi_HostAddress = http://localhost:5241
+
+GET {{QueueManagerApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
